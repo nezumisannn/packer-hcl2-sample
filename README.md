@@ -94,7 +94,7 @@ build {
 
   provisioner "shell" {
     inline = [
-      "echo it's alive !"
+      "hostname && cat /etc/os-release"
     ]
   }
 }
